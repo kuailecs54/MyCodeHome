@@ -1,0 +1,324 @@
+.box-y {
+	background: url(../images/y.png) no-repeat;
+	background-position: 49.5% 1%;
+	background-size: 55% 100%;
+}
+
+.box1 {
+	z-index: 9998;
+	position: absolute;
+	height: 285px;
+	width: 100%
+}
+
+.box2 {
+	z-index: 9998;
+	position: absolute;
+	height: 230px;
+	width: 100%
+}
+
+.box3 {
+	z-index: 9998;
+	position: absolute;
+	height: 310px;
+	width: 100%
+}
+
+.box4 {
+	z-index: 9998;
+	position: absolute;
+	height: 365px;
+	width: 100%
+}
+
+#d {
+	background: url(../images/lt.png) no-repeat;
+	background-size: 100% 100%;
+	height: 120px;
+	width: 120px;
+	position: absolute;
+	left: 1;
+	right: 1;
+}
+
+#d1 {
+	background: url(../images/rt.png) no-repeat;
+	background-size: 100% 100%;
+	height: 120px;
+	width: 120px;
+	position: absolute;
+	left: 400px;
+}
+
+#d2 {
+	background: url(../images/lf.png) no-repeat;
+	background-size: 100% 100%;
+	height: 120px;
+	width: 120px;
+	position: absolute;
+	top: 165px;
+}
+
+#d3 {
+	background: url(../images/rf.png) no-repeat;
+	background-size: 100% 100%;
+	height: 120px;
+	width: 120px;
+	position: absolute;
+	top: 165px;
+	left: 400px;
+}
+
+#chart_data1 {
+	position: absolute;
+	z-index: 9999999;
+	width: 170px;
+	height: 250px;
+	top: 1px;
+}
+
+.w1 {
+	left: 10px;
+	top: 120px;
+	position: absolute;
+}
+
+.w2 {
+	height: 285px;
+	width: 100%;
+}
+
+.w3 {
+	height: 230px;
+	width: 100%
+}
+
+.chart_tr {
+	width: 100%;
+	height: 230px;
+}
+
+.w3 #d {
+	left: 1;
+	right: 1;
+}
+
+.w3 #d1 {
+	left: 400px;
+}
+
+}
+.w3 #d2 {
+	top: 405px;
+}
+
+}
+.w3 #d3 {
+	top: 405px;
+	left: 400px;
+}
+
+.w4 {
+	height: 230px;
+	width: 100%
+}
+
+.chart_cc {
+	width: 100%;
+	height: 230px;
+}
+
+.w4 #d {
+	left: 1;
+	right: 1;
+}
+
+.w4 #d1 {
+	left: 400px;
+}
+
+.w4 #d2 {
+	top: 645px;
+}
+
+.w4 #d3 {
+	top: 645px;
+	left: 400px;
+}
+
+.w5 {
+	height: 230px;
+	width: 100%
+}
+
+#chart_city {
+	width: 100%;
+	height: 230px;
+}
+
+.w5 #d {
+	left: 1;
+	right: 1;
+}
+
+.w5 #d1 {
+	left: 400px;
+}
+
+.w5 #d2 {
+	top: 885px;
+}
+
+.w5 #d3 {
+	top: 885px;
+	left: 400px;
+}
+
+.w6 {
+	top: 120px;
+	left: 530px;;
+	position: absolute;
+}
+
+#chart_zs {
+	width: 100%;
+	height: 310px;
+}
+
+.w7 {
+	height: 310px;
+	width: 100%
+}
+
+.w7 #d {
+	left: 1;
+	right: 1;
+	top: 1px;
+}
+
+.w7 #d1 {
+	left: 765px;
+	top: 1px;
+}
+
+.w7 #d2 {
+	top: 190px;
+}
+
+.w7 #d3 {
+	top: 190px;
+	left: 765px;
+}
+
+.w8 {
+	height: 365px;
+	width: 100%;
+}
+
+#chart_data {
+	width: 100%;
+	height: 310px;
+}
+
+.w8 #d {
+	left: 1;
+	right: 1;
+	top: 320px;
+}
+
+.w8 #d1 {
+	left: 765px;
+	top: 320px;
+}
+
+.w8 #d2 {
+	top: 565px;
+}
+
+.w8 #d3 {
+	top: 565px;
+	left: 765px;
+}
+
+.w9 {
+	height: 310px;
+	width: 100%;
+}
+
+#chart_hz {
+	width: 100%;
+	height: 310px;
+}
+
+.w10 {
+	text-align: center;
+	width: 100% ；;
+	color: #4CFFFF;
+	font-size: 22px;
+}
+
+.hz_2 {
+	top: -2px;
+	position: relative;
+}
+
+.box1_div {
+	background-color: rgba(50, 128, 158, 0.4);
+	width: 220px;
+	height: 225px;
+	float: left;
+	border-radius: 200px;
+	position: absolute;
+	top: 25px;
+	z-index: -9;
+	left: 5px
+}
+
+#chart_cyl {
+	width: 49%;
+	height: 270px;
+	float: right;
+}
+
+#chart_wl {
+	width: 49%;
+	height: 270px;
+	float: left;
+}
+
+#md {
+	color: white;
+	margin-top: 10px;
+	margin-left: 35px
+}
+
+#chart_js {
+	width: 100%;
+	height: 230px;
+}
+
+#chart_word {
+	width: 100%;
+	height: 230px;
+}
+
+#chart_wz {
+	width: 100%;
+	height: 230px;
+}
+#chart_hz{
+	width:100%;height:310px;
+}
+#chart_cx{
+	width:100%;height:285px;
+}
+.chart_hz_div {
+	text-align: center;
+	width: 100% ；;
+	color: #4CFFFF;
+	font-size: 22px;
+}
+.hz_2{
+	top: -2px;position: relative;
+}

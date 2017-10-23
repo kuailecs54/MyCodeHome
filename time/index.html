@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>创新主体</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<link href="css/index.css" rel="stylesheet" />
+<link href="css/ztzt.css" rel="stylesheet" />
+<script type="text/javascript" src="js/jquery1.42.min.js"></script>
+<script type="text/javascript" src="js/echarts.js"></script>
+<script type="text/javascript" src="js/dataTool.min.js"></script>
+<script type="text/javascript" src="js/china.js"></script>
+<script type="text/javascript" src="js/data.js"></script>
+<script type="text/javascript" src="js/world.js"></script>
+</head>
+
+<body>
+	<div class="top">
+		<div class="left">
+			<a href="index.html"><div class="one1 left"></div></a> <a
+				href="创新评价.html"><div class="two right"></div></a>
+		</div>
+		<div class="right">
+			<a href="创新现状.html"><div class="three left"></div></a> <a
+				href="创新分析.html"><div class="four1 right"></div></a>
+		</div>
+	</div>
+	<div>
+		<div class="w300" style="left:10px;top:120px;position: absolute;">
+			<div class="box" style="height: 945px;width: 100%">
+				<div class="box1">
+					<br>
+					<div id="md" style="margin-left:5%">
+						<dl style=" line-height: 50px;height: 50px">
+							<dd>
+								<a href="创新政策专题.html">创新政策专题</a>
+							</dd>
+							<dd>
+								<a href="创新成果专题.html">创新成果专题</a>
+							</dd>
+							<dd>
+								<a class="on" href="创新主体专题.html" style="color: #69DD51;">创新主体专题</a>
+							</dd>
+							<dd>
+								<a href="创新人才专题.html">创新人才专题</a>
+							</dd>
+
+							<dd>
+								<a style="color: #CCCCCC">创新项目专题</a>
+							</dd>
+
+							<dd>
+								<a href="创新支撑专题.html">创新支撑专题</a>
+							</dd>
+
+						</dl>
+					</div>
+				</div>
+				<div id="d" style="left: 1;right: 1;"></div>
+				<div id="d1" style="left: 180px;"></div>
+				<div id="d2" style="top: 825px;"></div>
+				<div id="d3" style="top: 825px;left: 180px;"></div>
+			</div>
+
+		</div>
+		<div class="w1580" style="left:320px;top:120px;position: absolute;">
+			<div class="box" style="height: 945px;width: 100%">
+				<div class="box1">
+					<div style="width: 100%;height: 100px;">
+						<div class="box2" style="width: 100%;height: 100px;">
+							<div style="height: 100px;width: 49%;float: left;">
+								<div style="height: 49px;width: 100%;line-height: 49px;">
+									<div data-toggle="distpicker">
+										<table width="100%" height="100%">
+											<tr>
+												<td><img class="checkbox" src="images/xz.png"
+													id="checkimg"> <input type="checkbox"
+													onclick="checkclick();" id="agree"></td>
+												<td><div class="js">
+														&nbsp;&nbsp;<select id="province7" style="width: 130px"></select>
+													</div></td>
+												<td><img class="checkbox" src="images/xz.png"
+													id="checkimg1"> <input onclick="checkclick1();"
+													type="checkbox" id="agree1"></td>
+												<td><div class="xz">
+														&nbsp;&nbsp;<select id="city7" style="width: 130px"></select>
+													</div></td>
+												<td><input class="in add" type="button" value="增加"></td>
+												<td><input class="in reset" type="button" value="重置"></td>
+											</tr>
+										</table>
+									</div>
+								</div>
+								<div
+									style="height: 49px;width: 100%;line-height: 49px；;color: #73FFFF">
+									<table>
+										<tr class="addtd">
+											<td>已选择城市：</td>
+										</tr>
+									</table>
+								</div>
+							</div>
+							<div
+								style="height: 100px;width: 49%;float: right;line-height: 100px;">
+								<table width="100%">
+									<tr style="text-align: right;">
+										<td style="color: #4CFFFF;font-size: 22px">人才流动&nbsp;&nbsp;</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div id="t"></div>
+						<div id="t1"></div>
+					</div>
+					<div style="width: 100%;height: 430px;top: 5px;position: relative;">
+						<div style="width: 40%;height: 430px;float: left;">
+							<div id="chart_data" style="width:100%;height:350px;"></div>
+							<div class="timelineBox">
+								<div id="timeline" class="timeline"></div>
+							</div>
+						</div>
+						<div
+							style="width: 31%;height: 430px;position: absolute;left: 650px;">
+							<div id="chart_pie" style="width:100%;height:320px;"></div>
+						</div>
+						<div
+							style="width: 28%;height: 430px;position: absolute;left: 1120px;">
+							<div id="chart_wl" style="height: 210px;"></div>
+							<div id="chart_cyl" style="height: 210px;"></div>
+						</div>
+					</div>
+					<div>
+						<div id="chart_zhu" style="width:100%;height:400px;"></div>
+
+					</div>
+				</div>
+				<div id="d" style="left: 1;right: 1;"></div>
+				<div id="d1" style="left: 1460px;"></div>
+				<div id="d2" style="top: 825px;"></div>
+				<div id="d3" style="top: 825px;left: 1460px;"></div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery-1.11.0.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/distpicker.data.js"></script>
+	<script src="js/distpicker.js"></script>
+</body>
+<script>
+	$(function() {
+		$(".add").click(function() {
+			var province7 = "";
+			var city7 = "";
+			if ($("#agree").is(':checked')) {
+				province7 = $("#province7").val();
+			}
+			if ($("#agree1").is(':checked')) {
+				city7 = $("#city7").val();
+			}
+			if (province7 != "" || city7 != "") {
+				var pc = province7 + "-" + city7;
+				var $tdName = $("<td >" + pc + "</td>");
+				var $tr = $(".addtd");
+				$tr.append($tdName);
+			}
+		});
+		$(".reset").click(function() {
+			window.location.reload();
+		});
+	});
+	function checkclick() {
+		var checkimg = document.getElementById("checkimg");
+		if ($("#agree").is(':checked')) {
+			checkimg.src = "images/xzb.png";
+		} else {
+			checkimg.src = "images/xz.png";
+		}
+	}
+	function checkclick1() {
+		var checkimg1 = document.getElementById("checkimg1");
+		if ($("#agree1").is(':checked')) {
+			checkimg1.src = "images/xzb.png";
+		} else {
+			checkimg1.src = "images/xz.png";
+		}
+	}
+</script>
+<script type="text/javascript">
+	var dataMap = {};
+	function dataFormatter(obj) {
+		var pList = [ '一月' ];
+		var temp;
+		for (var year = 2002; year <= 2011; year++) { //注意，2002 - 2011 和下面的数据都要对应上
+
+			obj[year] = Math.floor(50 / 100) * 100;
+		}
+		return obj;
+	}
+	dataMap.data = dataFormatter({
+		2011 : [ 16 ],
+		2010 : [ 36 ],
+		2009 : [ 50 ],
+		2008 : [ 90 ],
+		2007 : [ 77 ],
+		2006 : [ 20 ],
+		2005 : [ 46 ],
+		2004 : [ 68 ],
+		2003 : [ 30 ],
+		2002 : [ 84 ]
+	});
+
+	function chart_time() {
+		var myChart = echarts.init(document.getElementById('timeline'));
+		option = {
+			baseOption : {
+				timeline : {
+					axisType : 'category',
+					autoPlay : false,
+					playInterval : 5000,
+					bottom : 10,
+					left : 100,
+					right : 100,
+					lineStyle : {
+						color : '#4DFFFF'
+					},
+					label : {
+						normal : {
+							textStyle : {
+								color : '#4DFFFF'
+							}
+						}
+					},
+					checkpointStyle : {
+						color : '#4DFFFF',
+						borderColor : 'rgba(77,255,255, 0.5)'
+					},
+					controlStyle : {
+						normal : {
+							color : '#4DFFFF',
+							borderColor : '#4DFFFF'
+						}
+					},
+					data : [ '2002', '2003', '2004', '2005', '2006', '2007',
+							'2008', '2009', '2010', '2011' ]
+				},
+				xAxis : [ {
+					'type' : 'category',
+					'axisLabel' : {
+						'interval' : 0
+					}
+
+				} ],
+				yAxis : [ {
+					type : 'value'
+				} ],
+				series : [ {
+					name : 'GDP',
+					type : 'line'
+				} ]
+			},
+			options : [ {
+				series : [ {
+					data : dataMap.data['2002']
+				} ]
+			}, {
+				series : [ {
+					data : dataMap.data['2003']
+				} ]
+			}, {
+				series : [ {
+					data : dataMap.data['2004']
+				} ]
+			}, {
+				series : [ {
+					data : dataMap.data['2005']
+				} ]
+			}, {
+				series : [ {
+					data : dataMap.data['2006']
+				} ]
+			}, {
+				series : [ {
+					data : dataMap.data['2007']
+				} ]
+			}, {
+				series : [ {
+					data : dataMap.data['2008']
+				} ]
+			}, {
+				series : [ {
+					data : dataMap.data['2009']
+				} ]
+			}, {
+				series : [ {
+					data : dataMap.data['2010']
+				} ]
+			}, {
+				series : [ {
+					data : dataMap.data['2011']
+				} ]
+			} ]
+		};
+		myChart.setOption(option);
+		myChart.on('timelinechanged', function(params) {
+			chart_data();
+			chart_cyl();
+			chart_wl();
+			chart_zhu();
+		});
+	}
+
+	chart_time();
+
+	function chart_data() {
+		var myChart = echarts.init(document.getElementById('chart_data'));
+		var geoCoordMap = {
+				"郑州" : [ 113.631349, 34.753488 ],
+				"安阳" : [ 115.0996, 34.753488 ],
+				"洛阳" : [ 112.460033, 34.753488 ],
+				"郑州1" : [ 100.631349, 35.753488 ],
+				"安阳1" : [ 102.0996, 35.753488 ],
+				"洛阳1" : [ 103.460033, 35.753488 ],
+				"郑州2" : [ 95.631349, 36.753488 ],
+				"安阳2" : [ 94.0996, 36.753488 ],
+				"洛阳2" : [ 97.460033, 36.753488 ]
+			};
+			var rawData = [ [ "郑州", 28.2 ], [ "安阳", 34 ], [ "洛阳", 25 ],
+					[ "郑州1", 18.2 ], [ "安阳1", 24 ], [ "洛阳1", 45 ], [ "郑州2", 38.2 ],
+					[ "安阳2", 24 ], [ "洛阳2", 35 ] ];
+			var option = {
+				title : {
+					text : '人才分布热力图',
+					textStyle : {
+						fontWeight : 'normal',
+						fontSize : 16,
+						color : '#4CFFFF'
+					},
+					left : '36%'
+				},
+				tooltip : {
+					trigger : 'axis'
+				},
+				toolbox : {
+					show : true,
+					x : 'right',
+					y : 10,
+
+				},
+				geo : {
+					map : 'china',
+					//silent : true,
+					zoom : 1,
+					label : {
+						emphasis : {
+							show : false,
+						}
+					},
+					itemStyle : {
+						normal : {
+							label : {
+								show : true
+							},
+							areaColor : '#82E2C9',
+							borderColor : '#111',
+							borderWidth : 1,
+							areaStyle : {
+								color : 'rgba(27,27,27,0.2)'
+							}
+						},
+						emphasis : {
+							areaColor : '#2a333d'
+						}
+					}
+				}
+			};
+			function renderEachCity() {
+				var option = {
+					xAxis : [],
+					yAxis : [],
+					grid : [],
+					series : []
+				};
+				var inflationStartIdx = 1;
+				var inflationYearCount = 1;
+				var inflationYearStart = '2017';
+				var xAxisCategory = [];
+				for (var i = 0; i < inflationYearCount; i++) {
+					xAxisCategory.push((+inflationYearStart + i) + '');
+				}
+
+				echarts.util.each(rawData, function(dataItem, idx) {
+					var geoCoord = geoCoordMap[dataItem[0]];
+					var coord = myChart.convertToPixel('geo', geoCoord);
+					idx += '';
+
+					inflationData = [];
+					for (var k = 0; k < inflationYearCount; k++) {
+						inflationData.push(dataItem[inflationStartIdx + k]);
+					}
+
+					option.xAxis.push({
+						id : idx,
+						gridId : idx,
+						type : 'category',
+						show : true,
+						nameStyle : {
+							color : '#ddd',
+							fontSize : 12
+						},
+						nameLocation : 'middle',
+						nameGap : 3,
+						splitLine : {
+							show : false
+						},
+						axisTick : {
+							show : false
+						},
+						axisLabel : {
+							show : false
+						},
+						axisLine : {
+							onZero : false,
+							lineStyle : {
+								color : 'rgba(2,179,146,0.8)',
+								width:'8'//坐标线的宽度
+							}
+						},
+						data : xAxisCategory,
+						z : 99999999999
+					});
+					option.yAxis.push({
+						id : idx,
+						show : false,
+						gridId : idx,
+						splitLine : {
+							show : false
+						},
+						axisTick : {
+							show : false
+						},
+						axisLabel : {
+							show : false
+						},
+						axisLine : {
+							lineStyle : {
+								color : '#bbb'
+							}
+						},
+						z : 99999999999
+					});
+					option.grid.push({
+						id : idx,
+						width : 30,
+						height : 110,
+						left : coord[0],
+						top : coord[1] - 55,
+						z : 99999999999
+					});
+					option.series.push({
+						id : idx,
+						type : 'bar',
+						barWidth : "20%",
+						xAxisId : idx,
+						yAxisId : idx,
+						data : inflationData,
+						itemStyle : {
+							normal : {
+								color : 'rgba(255,255,0,0.9)',
+							}
+						},
+						z : 99999999999
+					});
+				});
+				myChart.setOption(option);
+			}
+			setTimeout(renderEachCity, 10);
+		myChart.setOption(option);
+	}
+	chart_data();
+
+	function chart_cyl() {
+		var chart_cyl = echarts.init(document.getElementById('chart_cyl'));
+		chart_cyl.showLoading();
+		$.get('js/les-miserables.gexf', function(xml) {
+			chart_cyl.hideLoading();
+
+			var graph = echarts.dataTool.gexf.parse(xml);
+			var categories = [];
+			for (var i = 0; i < 9; i++) {
+				categories[i] = {
+					name : '类目' + i
+				};
+			}
+			graph.nodes.forEach(function(node) {
+				node.itemStyle = null;
+				node.value = node.symbolSize;
+				node.symbolSize /= 1.5;
+				node.label = {
+					normal : {
+						show : node.symbolSize > 30
+					}
+				};
+				node.category = node.attributes.modularity_class;
+			});
+			option = {
+				title : {
+					text : '产业链',
+					textStyle : {
+						fontWeight : 'normal',
+						fontSize : 16,
+						color : '#4CFFFF'
+					},
+					left : '43%'
+				},
+				grid : {
+					//top:'10%',
+					left : '1%', //grid 组件离容器左侧的距离。
+					right : '1%', //grid 组件离容器右侧的距离。
+					//bottom : '1%', //grid 组件离容器下侧的距离。
+					containLabel : true
+				//grid 区域是否包含坐标轴的刻度标签[ default: false ] 
+				},
+				tooltip : {},
+				animationDurationUpdate : 1500,
+				animationEasingUpdate : 'quinticInOut',
+				series : [ {
+					//name : 'Les Miserables',
+					type : 'graph',
+					layout : 'circular',
+					data : graph.nodes,
+					links : graph.links,
+					categories : categories,
+					zoom : 1.5,
+					//roam : true,
+					label : {
+						normal : {
+							position : 'right',
+							formatter : '{b}'
+						}
+					},
+					lineStyle : {
+						normal : {
+							curveness : 0.3
+						}
+					}
+				} ]
+			};
+
+			chart_cyl.setOption(option);
+		}, 'xml');
+	}
+	function chart_wl() {
+		var myChart = echarts.init(document.getElementById('chart_wl'));
+		myChart.showLoading();
+		$.get('js/webkit-dep.json', function(webkitDep) {
+			myChart.hideLoading();
+			option = {
+				title : {
+					text : '合作网络',
+					textStyle : {
+						fontWeight : 'normal',
+						fontSize : 16,
+						color : '#4CFFFF'
+					},
+					left : '43%'
+				},
+				legend : {
+					data : []
+				},
+				grid : {
+					left : '1%', //grid 组件离容器左侧的距离。
+					right : '1%', //grid 组件离容器右侧的距离。
+					containLabel : true
+				},
+				series : [ {
+					type : 'graph',
+					layout : 'force',
+					animation : false,
+					label : {
+						normal : {
+							position : 'right',
+							formatter : '{b}'
+						}
+					},
+					draggable : true,
+					data : webkitDep.nodes.map(function(node, idx) {
+						node.id = idx;
+						return node;
+					}),
+					categories : webkitDep.categories,
+					force : {
+						edgeLength : 2,
+						repulsion : 5,
+						gravity : 0.4
+					},
+					edges : webkitDep.links
+				} ]
+			};
+
+			myChart.setOption(option);
+		});
+		window.onresize = function() {
+			//重置容器高宽
+			myChart.resize();
+		};
+	}
+	chart_wl();
+	chart_cyl();
+
+	function chart_zhu() {
+		var chart_zhu = echarts.init(document.getElementById('chart_zhu'));
+		option = {
+			backgroundColor : "rgba(52,98,146,0.4)",
+			"tooltip" : {
+				"trigger" : "axis",
+				"axisPointer" : {
+					"type" : "shadow"
+				},
+			},
+			"grid" : {
+
+				top : '10%',
+				left : '3%',
+				right : '3%',
+				bottom : '3%',
+				containLabel : true
+
+			},
+			"legend" : {
+				"x" : "right",
+				"data" : []
+			},
+			"toolbox" : {
+				"show" : true,
+
+			},
+			"calculable" : true,
+			"xAxis" : [ {
+				"type" : "category",
+				"splitLine" : {
+					"show" : false
+				},
+				"axisTick" : {
+					"show" : false
+				},
+				"splitArea" : {
+					"show" : false
+				},
+				"axisLabel" : {
+					"interval" : 0,
+
+					"show" : true,
+					"splitNumber" : 15,
+					textStyle : {
+						color : '#4CFFFF'
+					}
+				},
+				axisLine : {
+					lineStyle : {
+						color : '#97FDFD',
+					}
+				},
+				"data" : [ 2007, 2008, 2009, 2010, 2011, 2013, 2014, 2015,
+						2016, 2017 ],
+			} ],
+			"yAxis" : [ {
+				"type" : "value",
+				"splitLine" : {
+					"show" : false
+				},
+				"axisLine" : {
+					"show" : true,
+					lineStyle : {
+						color : '#97FDFD',
+					}
+				},
+				"axisTick" : {
+					"show" : false
+				},
+				"splitArea" : {
+					"show" : false
+				},
+				axisLabel : {
+					show : true,
+					textStyle : {
+						color : '#4CFFFF'
+					}
+				},
+			} ],
+
+			"series" : [
+					{
+						"name" : "昨日",
+						"type" : "bar",
+						"stack" : "总量",
+						"barMaxWidth" : 50,
+						"barGap" : "10%",
+						"itemStyle" : {
+							"normal" : {
+								"barBorderRadius" : 0,
+								"color" : "rgba(60,169,196,0.5)",
+								"label" : {
+									"show" : true,
+									"textStyle" : {
+										"color" : "rgba(0,0,0,1)"
+									},
+									"position" : "insideTop",
+									formatter : function(p) {
+										return p.value > 0 ? (p.value) : '';
+									}
+								}
+							}
+						},
+						"data" : [ 3709, 2417, 755, 2610, 1719, 433, 2544,
+								4285, 3372, 2484,
+
+						],
+					},
+					{
+						"name" : "人流减少",
+						"type" : "bar",
+						"stack" : "总量",
+						"itemStyle" : {
+							"normal" : {
+								"color" : "rgba(51,204,112,1)",
+								"barBorderRadius" : 0,
+								"label" : {
+									"show" : true,
+									"position" : "top",
+									formatter : function(p) {
+										return p.value > 0 ? ('▼' + p.value + '')
+												: '';
+									}
+								}
+							}
+						},
+						"data" : [ 386, 0, 0, 122, 261, 171, 0, 40, 246, 0,
+
+						]
+					},
+					{
+						"name" : "人流增长",
+						"type" : "bar",
+						"stack" : "总量",
+						"itemStyle" : {
+							"normal" : {
+								"color" : "rgba(193,35,43,1)",
+								"barBorderRadius" : 0,
+								"label" : {
+									"show" : true,
+									"position" : "top",
+									formatter : function(p) {
+										return p.value > 0 ? ('▲' + p.value + '')
+												: '';
+									}
+								}
+							}
+						},
+						"data" : [ 0, 376, 1727, 0, 0, 0, 220, 0, 0, 1951,
+
+						]
+					} ]
+		}
+		chart_zhu.setOption(option);
+	}
+	chart_zhu();
+</script>
+<script type="text/javascript"
+	src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+<script type="text/javascript">
+	require.config({
+		paths : {
+			echarts : 'http://echarts.baidu.com/build/dist'
+		}
+	});
+	require([ 'echarts', 'echarts/chart/chord', 'echarts/chart/force'
+
+	], function(ec) {
+		// 基于准备好的dom，初始化echarts图表
+		var myChart = ec.init(document.getElementById('chart_pie'));
+
+		option = {
+
+			tooltip : {
+				trigger : 'item',
+				formatter : function(params) {
+					if (params.indicator2) { // is edge
+						return params.indicator2 + ' ' + params.name + ' '
+								+ params.indicator;
+					} else { // is node
+						return params.name
+					}
+				}
+			},
+			toolbox : {
+				show : true,
+
+			},
+
+			series : [ {
+				type : 'chord',
+				sort : 'ascending',
+				sortSub : 'descending',
+				showScale : false,
+				itemStyle : {
+					normal : {
+						label : {
+							rotate : true
+						},
+					}
+				},
+				// 使用 nodes links 表达和弦图
+				nodes : [ {
+					name : '默特萨克',
+					itemStyle : {
+						normal : {
+							label : {
+								textStyle : {
+									color : '#4CFFFF'
+								}
+							}
+						}
+					}
+				}, {
+					name : '厄齐尔',
+					itemStyle : {
+						normal : {
+							label : {
+								textStyle : {
+									color : '#4CFFFF'
+								}
+							}
+						}
+					}
+				}, {
+					name : '波多尔斯基',
+					itemStyle : {
+						normal : {
+							label : {
+								textStyle : {
+									color : '#4CFFFF'
+								}
+							}
+						}
+					}
+				}, {
+					name : '诺伊尔',
+					itemStyle : {
+						normal : {
+							label : {
+								textStyle : {
+									color : '#4CFFFF'
+								}
+							}
+						}
+					}
+				}, {
+					name : '博阿滕',
+					itemStyle : {
+						normal : {
+							label : {
+								textStyle : {
+									color : '#4CFFFF'
+								}
+							}
+						}
+					}
+				}, {
+					name : '施魏因施泰格',
+					itemStyle : {
+						normal : {
+							label : {
+								textStyle : {
+									color : '#4CFFFF'
+								}
+							}
+						}
+					}
+				}, {
+					name : '拉姆',
+					itemStyle : {
+						normal : {
+							label : {
+								textStyle : {
+									color : '#4CFFFF'
+								}
+							}
+						}
+					}
+				}, {
+					name : '克罗斯',
+					itemStyle : {
+						normal : {
+							label : {
+								textStyle : {
+									color : '#4CFFFF'
+								}
+							}
+						}
+					}
+				}, {
+					name : '穆勒',
+					itemStyle : {
+						normal : {
+							label : {
+								textStyle : {
+									color : '#4CFFFF'
+								}
+							}
+						}
+					}
+				}, {
+					name : '格策',
+					itemStyle : {
+						normal : {
+							label : {
+								textStyle : {
+									color : '#4CFFFF'
+								}
+							}
+						}
+					}
+				}, {
+					name : '胡梅尔斯',
+					itemStyle : {
+						normal : {
+							label : {
+								textStyle : {
+									color : '#4CFFFF'
+								}
+							}
+						}
+					}
+				}, {
+					name : '魏登费勒',
+					itemStyle : {
+						normal : {
+							label : {
+								textStyle : {
+									color : '#4CFFFF'
+								}
+							}
+						}
+					}
+				}, {
+					name : '杜尔姆',
+					itemStyle : {
+						normal : {
+							label : {
+								textStyle : {
+									color : '#4CFFFF'
+								}
+							}
+						}
+					}
+				}, {
+					name : '格罗斯克罗伊茨',
+					itemStyle : {
+						normal : {
+							label : {
+								textStyle : {
+									color : '#4CFFFF'
+								}
+							}
+						}
+					}
+				}, {
+					name : '阿森纳',
+					itemStyle : {
+						normal : {
+							label : {
+								textStyle : {
+									color : '#4CFFFF'
+								}
+							}
+						}
+					}
+				}, {
+					name : '拜仁慕尼黑',
+					itemStyle : {
+						normal : {
+							label : {
+								textStyle : {
+									color : '#4CFFFF'
+								}
+							}
+						}
+					}
+				}, {
+					name : '多特蒙德',
+					itemStyle : {
+						normal : {
+							label : {
+								textStyle : {
+									color : '#4CFFFF'
+								}
+							}
+						}
+					}
+				} ],
+				links : [ {
+					source : '阿森纳',
+					target : '默特萨克',
+					weight : 0.9,
+					name : '效力'
+				}, {
+					source : '阿森纳',
+					target : '厄齐尔',
+					weight : 0.9,
+					name : '效力',
+				}, {
+					source : '阿森纳',
+					target : '波多尔斯基',
+					weight : 0.9,
+					name : '效力'
+				}, {
+					source : '拜仁慕尼黑',
+					target : '诺伊尔',
+					weight : 0.9,
+					name : '效力'
+				}, {
+					source : '拜仁慕尼黑',
+					target : '博阿滕',
+					weight : 0.9,
+					name : '效力'
+				}, {
+					source : '拜仁慕尼黑',
+					target : '施魏因施泰格',
+					weight : 0.9,
+					name : '效力'
+				}, {
+					source : '拜仁慕尼黑',
+					target : '拉姆',
+					weight : 0.9,
+					name : '效力'
+				}, {
+					source : '拜仁慕尼黑',
+					target : '克罗斯',
+					weight : 0.9,
+					name : '效力'
+				}, {
+					source : '拜仁慕尼黑',
+					target : '穆勒',
+					weight : 0.9,
+					name : '效力'
+				}, {
+					source : '拜仁慕尼黑',
+					target : '格策',
+					weight : 0.9,
+					name : '效力'
+				}, {
+					source : '多特蒙德',
+					target : '胡梅尔斯',
+					weight : 0.9,
+					name : '效力'
+				}, {
+					source : '多特蒙德',
+					target : '魏登费勒',
+					weight : 0.9,
+					name : '效力'
+				}, {
+					source : '多特蒙德',
+					target : '杜尔姆',
+					weight : 0.9,
+					name : '效力'
+				}, {
+					source : '多特蒙德',
+					target : '格罗斯克罗伊茨',
+					weight : 0.9,
+					name : '效力'
+				},
+
+				// Ribbon Type 的和弦图每一对节点之间必须是双向边
+				{
+					target : '阿森纳',
+					source : '默特萨克',
+					weight : 1
+				}, {
+					target : '阿森纳',
+					source : '厄齐尔',
+					weight : 1
+				}, {
+					target : '阿森纳',
+					source : '波多尔斯基',
+					weight : 1
+				}, {
+					target : '拜仁慕尼黑',
+					source : '诺伊尔',
+					weight : 1
+				}, {
+					target : '拜仁慕尼黑',
+					source : '博阿滕',
+					weight : 1
+				}, {
+					target : '拜仁慕尼黑',
+					source : '施魏因施泰格',
+					weight : 1
+				}, {
+					target : '拜仁慕尼黑',
+					source : '拉姆',
+					weight : 1
+				}, {
+					target : '拜仁慕尼黑',
+					source : '克罗斯',
+					weight : 1
+				}, {
+					target : '拜仁慕尼黑',
+					source : '穆勒',
+					weight : 1
+				}, {
+					target : '拜仁慕尼黑',
+					source : '格策',
+					weight : 1
+				}, {
+					target : '多特蒙德',
+					source : '胡梅尔斯',
+					weight : 1
+				}, {
+					target : '多特蒙德',
+					source : '魏登费勒',
+					weight : 1
+				}, {
+					target : '多特蒙德',
+					source : '杜尔姆',
+					weight : 1
+				}, {
+					target : '多特蒙德',
+					source : '格罗斯克罗伊茨',
+					weight : 1
+				} ]
+			} ]
+		};
+		myChart.setOption(option);
+	});
+</script>
+</html>
