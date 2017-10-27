@@ -1,0 +1,104 @@
+*{
+  margin: 0; padding: 0;     
+ }
+#layout{
+    background-image: url("../img/bgimg2.jpg ");
+    background-size:100% 100%;
+    width: 2070px;
+    height: 1336px;
+}
+#head{
+
+    width: 100%;
+    height: 100px;
+}
+#title{
+
+    text-align: center;
+    float: left;
+    width:30%;
+    margin-left: 36%;
+    margin-top: 10px;
+    font-size: 2.5em;
+    color: #cff;
+}
+#nowTime{
+    width: 200px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 1780px;
+    text-align: center;
+    font-size: 1.2em;
+    color: #cff;
+    position:absolute;
+}
+.demo{
+    width: 650px;
+    height: 1180px;
+}
+#left{
+    margin-left: 40px;
+    position:absolute;
+}
+#center{
+    margin-left: 700px;
+    position:absolute;
+}
+#right{
+
+    margin-left:1372px;
+    position:absolute;
+}
+.leftBar{
+
+    width: 100%;
+    height: 50%;
+
+}
+#left1{
+    float: inherit;
+}
+#left2{
+
+    float: inherit;
+}
+.leftBar2{
+    width: 100%;
+    height: 50%;
+}
+#left2-1{
+
+    float: inherit;
+}
+#left2-2{
+    float: inherit;
+}
+.right{
+width: 100%;
+height: 34%;
+}
+#right1{
+
+    float: inherit;
+}
+#right2{
+
+    float: inherit;
+}
+#right3{
+
+    float: inherit;
+}
+#centerMap{
+    width: 100%;
+    height: 65%;
+    float: inherit;
+
+}
+#centerBar{
+    width: 100%;
+    height: 35%;
+    float: inherit;
+
+
+}

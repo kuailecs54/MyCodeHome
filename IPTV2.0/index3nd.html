@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IPTV可视化大屏数据统计</title>
+    <link href="css/show.css" type="text/css" rel="stylesheet"/>
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/echarts.js"></script>
+</head>
+<body>
+<div id="layout">
+    <div id="head">
+        <p id="title">IPTV可视化大屏数据统计</p>
+        <div id="nowTime"></div>
+    </div>
+    <div id="left" class="demo">
+        <div class="leftBar" id="left1"></div>
+        <div class="leftBar" id="left2">
+            <div class="leftBar2" id="left2-1"></div>
+            <div class="leftBar2" id="left2-2"></div>
+        </div>
+    </div>
+    <div id="center" class="demo">
+        <div id="centerMap"></div>
+        <div id="centerBar"></div>
+    </div>
+    <div id="right" class="demo">
+        <div class="right" id="right1"></div>
+        <div class="right" id="right2"></div>
+        <div class="right" id="right3"></div>
+    </div>
+</div>
+<!-- //右上角的时钟-->
+<script type="text/javascript">
+    function fnW(str){
+        var num;
+        str>9?num=str:num="0"+str;
+        return num;
+    }
+    function  showtime(){
+        var  time=new Date();
+        var t = time.getFullYear()+ "年"+ (time.getMonth()+1) + "月" + time.getDate()+ "日 "+"<br/>\n\n" +fnW(time.getHours())+ ":"+ fnW(time.getMinutes()) + ":" +fnW(time.getSeconds());
+        var show=document.getElementById("nowTime");
+        show.innerHTML=t;
+    }
+    //加载页面自动执行
+    onload=showtime();
+    //每过1s就执行一次
+    setInterval(showtime,1000);
+
+
+
+</script>
+<script type="text/javascript" src="js/viewdata3/leftBar1.js"></script>
+<script type="text/javascript" src="js/viewdata3/left2-1.js"></script>
+<script type="text/javascript" src="js/viewdata3/left2-2.js"></script>
+<script type="text/javascript" src="js/viewdata3/right1.js"></script>
+<script type="text/javascript" src="js/viewdata3/right2.js"></script>
+<script type="text/javascript" src="js/viewdata3/right3.js"></script>
+<script type="text/javascript" src="js/viewdata3/centermap.js"></script>
+
+</body>
+</html>
